@@ -18,7 +18,7 @@
 时间在这里慢下来，多读书。大致有半月的空档期，希望能够读一遍
 构建之法，拿到了纸书，爱不释手。不过好记性不如烂笔头，本文是读书笔记系列之一">
 <meta property="og:image" content="http://7xjs3n.com1.z0.glb.clouddn.com/psp_2.1.png">
-<meta property="og:updated_time" content="2015-06-18T12:48:55.565Z">
+<meta property="og:updated_time" content="2015-06-18T23:21:25.492Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="构建之法读书笔记：代码复审理论及实践">
 <meta name="twitter:description" content="作者：titer1出处：www.drysaltery.com联系：1307316一九六八（仅接受短信）声明：本文采用以下协议进行授权： 自由转载-非商用-非衍生-保持署名|Creative Commons BY-NC-ND 3.0 ，转载请注明作者及出处。
@@ -98,30 +98,27 @@
 <p>构建之法，拿到了纸书，爱不释手。不过好记性不如烂笔头，本文是读书笔记系列之一</p>
 <h1 id="构建之法读书笔记：代码复审理论及实践">构建之法读书笔记：代码复审理论及实践</h1><h2 id="一-_软件工程师任务清单">一. 软件工程师任务清单</h2><p>首先看这张图“cmu 个人开发流程(psp2.1)”<br><img src="http://7xjs3n.com1.z0.glb.clouddn.com/psp_2.1.png" alt=""><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">软件工程师的流程，贯穿整个人软件开发过程。</span><br><span class="line">问问自己，需求分析 测试 在最近的一个项目中到底占多少比重</span><br></pre></td></tr></table></figure></p>
 <h2 id="二-_代码复审的核查表">二. 代码复审的核查表</h2><ol>
-<li>概要部分<ul>
+<li><p>概要部分</p>
+<ul>
 <li>1）代码符合需求和规格说明么？</li>
 <li>2）代码设计是否考虑周全？</li>
 <li>3）代码可读性如何？</li>
 <li>4）代码容易维护么？</li>
 <li>5）代码的每一行都执行并检查过了吗？</li>
-<li></li>
 </ul>
 </li>
 <li><p>设计规范部分</p>
 <ul>
-<li>1）设计是否遵从已知的设计模式或项目中常用的模式？<ul>
+<li>1）设计是否遵从已知的设计模式或项目中常用的模式？</li>
 <li>2）有没有硬编码或字符串/数字等存在？</li>
 <li>3）代码有没有依赖于某一平台，是否会影响将来的移植（如Win32到Win64）？</li>
 <li>4）开发者新写的代码能否用已有的Library/SDK/Framework中的功能实现？在本项目中是否存在类似的功能可以调用而不用全部重新实现？</li>
 <li>5）有没有无用的代码可以清除？（很多人想保留尽可能多的代码，因为以后可能会用上，这样导致程序文件中有很多注释掉的代码，这些代码都可以删除，因为源代码控制已经保存了原来的老代码。）</li>
 </ul>
 </li>
-</ul>
-</li>
 <li><p>代码规范部分</p>
 <ul>
 <li>修改的部分符合代码标准和风格么（详细条文略）？</li>
-<li></li>
 </ul>
 </li>
 <li><p>具体代码部分</p>
@@ -234,7 +231,7 @@ b.某GUI逻辑里，有上十种相同的控件，每种控件都有类似的逻
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/06/15/Rainy-Days/" data-id="cib2t5q3z0000cgff8zen22vt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/06/15/Rainy-Days/" data-id="cib2takpl0000lsffg6h4nit8" class="article-share-link">Share</a>
       
       
     </footer>
